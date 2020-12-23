@@ -1,82 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap');
-
-body, html {
-  height: 100%;
-  width: 100%;
-  background-color: whitesmoke;
-  margin: auto 0;
-  padding: auto 0;
-  max-width: 2400px;
-  min-width: 800px;
+body {
+  padding-top: 40px;
 }
 
-h1 {
-  font-family: 'Rock Salt', cursive;
-  font-size: 60px;
-  line-height: 1.1;
+#app-container {
+  background-color: #000000;
 }
 
-h3 {
-  font-family: 'Darker Grotesque', sans-serif;
-  font-size: 30px;
+#header-container {
+  border: transparent;
 }
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
+#brand-color {
+  font-size: 22px;
+  background: linear-gradient(to right, red 0%, orange 20%, yellow 30%, green 55%, blue 75%, purple 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-.header-image {
-  position: relative;
-  width: 100%;
-  float: right;
-  border-top-left-radius: 50%;
-  z-index: 1;
+#title-descriptor {
+  background: linear-gradient(to right, red 0%, orange 20%, yellow 30%, green 55%, blue 70%, purple 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-.header-left {
-  flex-direction: column;
-  width: 50%;
+#intro-img {
+  width: 28rem;
 }
 
-.header-right {
-  /* position: relative; */
-  width: 50%;
-}
-
-.header-left-container {
-  padding-left: 150px;
-  padding-top: 60px;
-}
-
-.header-green-half-circle {
-  position: absolute;
-  top: 100px;
-  right: 425px;
-  z-index: 3;
-  width: 200px;
-  height: 100px;
-  background-color: #169873;
-  border-top-left-radius: 100% 200%;
-  border-top-right-radius: 100% 200%;
-  transform: rotate(90deg);
-}
-
-.header-purple-circle {
-  position: absolute;
-  top: 500px;
-  right: 440px;
-  z-index: 3;
-  width: 50px;
-  height: 50px;
-  background-color: #7765E3;
-  border-radius: 50%;
-}
-
-a {
-  text-decoration: none;
+#nav-text {
+  font-size: 18px;
+  font-weight: bold;
   color: white;
+
+}
+
+#nav-text:hover {
+  background: linear-gradient(to right, #55CDFC 0%, #F7A8B8 40%, white 55%, #F7A8B8 75%, #55CDFC 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#intro-par {
+  font-size: 16px;
+}
+
+#intro-welcome {
+  padding-top: 5%;
+}
+
+#intro-row-2 {
+  padding-top: 5rem;
+}
+
+#tech-stack {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  /* padding: 10px 150px; */
 }
 

@@ -1,13 +1,16 @@
 import React from 'react';
-import Header from './Header';
-import '../App.css';
+import Intro from './Intro';
+import { Container, Row, Col } from 'react-bootstrap';
+import About from './About';
 
 function Home() {
  
   return (
-    <div className="home-container">
-      <Header />
-    </div>
+    <Container>
+
+        <Intro />
+        <About />
+    </Container>
   );
 }
 

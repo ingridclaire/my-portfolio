@@ -1,43 +1,33 @@
 import React from 'react';
-import Media from 'react-media';
-import '../App.css';
+import { Container, Navbar, Nav } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
+
 
 function Header() {
-  // const [dimensions, setDimensions] = React.useState({
-  //   height: window.innerHeight,
-  //   width: window.innerWidth
-  // })
-  // React.useEffect(() => {
-  //   const handleResize = () => {
-  //     if (window.innerWidth < 1200)
-  //     setDimensions({
-  //       height: window.innerHeight,
-  //       width: window.innerWidth
-  //     })
-  //     console.log(dimensions.width)
-  //   }
-  //   window.addEventListener('resize', handleResize);
-  // })
-
-  // const renderHome = () => {
-  //   if (dimensions.innerWidth < 1200) {
-
-  //   }
-  // }
+ 
   return (
-    <header className="header-container">
-      <section className="header-left">
-        <div className="header-left-container">
-          <img src="https://s3-us-west-1.amazonaws.com/icc.portfolio/header-orange-circles.png" alt="" />
-          <h1>
-            Ingrid
-            <br/>
-            Claire
-          </h1>
-          <h3>Software Development Solutions</h3>
-        </div>
-      </section>
-      <img className="header-right" src='https://s3-us-west-1.amazonaws.com/icc.portfolio/header-right.png' alt='' />
+    <header id="header-container">
+      <Navbar fixed="top" id="header-container" bg="dark" variant="dark" expand='lg' collapseOnSelect>
+        <Container>
+          <LinkContainer to='/'>
+            <Navbar.Brand id="brand-color">WONDERFUL WORLD OF CODE</Navbar.Brand>
+          </LinkContainer>
+          <Navbar.Toggle aria-controls='basic-navbar-nav' />
+          <Navbar.Collapse id='basic-navbar-nav'>
+            <Nav className="ml-auto">
+              <LinkContainer to='/portfolio'>
+                <Nav.Link className="nav-text" id="nav-text">Portfolio</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to='/tutoring'>
+                <Nav.Link className="nav-text" id="nav-text">Tutoring</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to='/contact'>
+                <Nav.Link className="nav-text" id="nav-text">Contact Me</Nav.Link>
+              </LinkContainer>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
 
     </header>
   );
