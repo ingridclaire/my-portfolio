@@ -17,6 +17,13 @@ body {
 	-webkit-text-fill-color: transparent;
 }
 
+#footer {
+  font-size: 18px;
+  background: linear-gradient(to right, red 0%, orange 20%, yellow 30%, green 55%, blue 75%, purple 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 #title-descriptor {
   background: linear-gradient(to right, red 0%, orange 20%, yellow 30%, green 55%, blue 70%, purple 100%);
 	-webkit-background-clip: text;

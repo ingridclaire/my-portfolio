@@ -1,10 +1,10 @@
 import React from 'react';
-import Home from './components/Home';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
+import Home from './screens/Home';
+import Portfolio from './screens/Portfolio';
+import Contact from './screens/Contact';
 import Header from './components/Header'
 import Footer from './components/Footer';
-import Tutoring from './components/Tutoring';
+import Tutoring from './screens/Tutoring';
 import { Container } from 'react-bootstrap';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
